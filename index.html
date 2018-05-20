@@ -1,0 +1,181 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+	<title>Weekly WebDev Challenge #1</title>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+    <link type="text/css" href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="fontello/css/fontello.css">
+    <!--[if IE 7]><link rel="stylesheet" href="css/" + font.fontname + "-ie7.css"><![endif]-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+	<header>
+        <img src="img/logo1.png" alt="Masteralb Creative www.masteralb.com" title="Masteralb Creative">
+    </header>
+    
+    <main>
+        <div class="container">
+            
+            <section>
+                <div class="col">
+                    
+                    
+                    <!-- REGISTER FORM-->
+                    
+                    <h5>Register Form</h5>
+                    <div class="form">
+                        <form action="#">
+                            <div class="input-line">
+                                <label for="username1"><i class="icon-user"></i></label>
+                                <input type="text" name="username1" placeholder="Username" id="username1" required>
+                            </div>
+                            <div class="input-line">
+                                <label for="password1"><i class="icon-lock-filled"></i></label>
+                                <input type="password" name="password1" placeholder="Password" id="password1" required>
+                            </div>
+                            <div class="input-line">
+                                <label for="confirm"><i class="icon-lock-filled"></i></label>
+                                <input type="password" name="confirm" placeholder="Confirm Password" id="confirm" required>
+                            </div>
+                            <div class="input-line">
+                                <label for="email1"><i class="icon-mail"></i></label>
+                                <input type="email" name="email1" placeholder="Email" id="email1" required>
+                            </div>
+                            <div class="input-line">
+                                <label for="location"><i class="icon-location"></i></label>
+                                <select name="location" id="location"  required>
+                                    <option value disabled selected>Your Location</option>
+                                        <option value="warszawa">Warszawa</option>
+                                        <option value="krakow">Kraków</option>
+                                        <option value="poznan">Poznań</option>
+                                        <option value="gdansk">Gdańsk</option>
+                                </select>
+                            </div>
+                            <div class="input-checkbox">
+                                <input type="checkbox" name="terms" id="terms" required><!--
+                             --><label class="css-label" for="terms">I have read and accepted the terms of use.</label>
+                            </div>
+                            <div class="input-button">
+                                <input type="submit" name="signup" value="Sign up">
+                            </div>
+                        </form>
+                    </div>
+                    
+                    
+                    <!--SEND EMAIL-->
+                    
+                    <h5>Send Email</h5>
+                    <div class="form">
+                        <form action="#">
+                            <div class="input-line">
+                                <label for="user"><i class="icon-user"></i></label>
+                                <input type="text" name="name" placeholder="Your Name" id="user" required>
+                            </div>
+                            <div class="input-line">
+                                <label for="email2"><i class="icon-mail"></i></label>
+                                <input type="email" name="email2" placeholder="Your Email" id="email2" required>
+                            </div>
+                            <div class="input-text">
+                                <textarea name="message" placeholder="Type your message ..." class="input-line" required></textarea>
+                            </div>
+                            <div class="input-checkbox">
+                                <input type="checkbox" name="copy" id="copy"><!--
+                             --><label for="copy">Send a copy to my Email</label>
+                            </div>
+                            <div class="input-button">
+                                <input type="submit" name="send" value="Send Email">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section><!--section1 end-->
+            
+            <section>
+                <div class="col">
+                    
+                    
+                    <!--SIGN IN FORM-->
+                    
+                    <h5>Sign In Form</h5>
+                    <div class="form">
+                        <form action="#">
+                            <div class="input-line">
+                                <label for="username2"><i class="icon-user"></i></label>
+                                <input type="text" name="username2" placeholder="Username" id="username2" required>
+                            </div>
+                            <div class="input-line">
+                                <label for="password2"><i class="icon-lock-filled"></i></label>
+                                <input type="password" name="password2" placeholder="Password" id="password2" required>
+                            </div>
+                            <div class="input-buttons">
+                                <div class="inline input-checkbox">
+                                    <input type="checkbox" name="remember" id="remember"><!--
+                                 --><label for="remember">Remember me</label>
+                                </div>
+                                <div class="inline">
+                                    <input type="submit" name="signin" value="Sign in">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    
+                    
+                    <!--RECOVER FORM-->
+                    
+                    <h5>Recover Form</h5>
+                    <div class="form">
+                        <form action="#">
+                            <div class="input-line">
+                                <label for="email3"><i class="icon-mail"></i></label>
+                                <input type="email" name="email3" placeholder="Enter your Email" id="email3" required>
+                            </div>
+                            <div class="input-line">
+                                <label for="phone"><i class="icon-mobile-alt"></i></label>
+                                <input type="phone" name="tel" placeholder="Enter your Phone number" id="phone" required>
+                            </div>
+                            <div class="input-buttons">
+                                <div class="inline">
+                                    <input type="submit" name="send" value="Send">
+                                </div>
+                                <div class="inline">
+                                    <input type="submit" name="done" value="Done" disabled>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    
+                    
+                    <!--SUBSCRIBE FORM-->
+                    
+                    <h5>Subscribe Form</h5>
+                    <div class="form">
+                        <form action="#">
+                            <div class="input-line">
+                                <label for="email4"><i class="icon-mail"></i></label>
+                                <input type="email" name="email4" placeholder="Enter your Email" id="email4" required>
+                            </div>
+                            <div class="input-buttons">
+                                <div class="inline">
+                                    <input type="submit" name="subscribe" value="Subscribe">
+                                </div>
+                                <div class="inline">
+                                    <input type="submit" name="reject" value="No, Thanks">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="footer">
+                        <img src="img/logo2.png" alt="Masteralb Creative www.masteralb.com" title="Masteralb Creative">
+                    </div>
+                </div>
+            </section><!--section2 end-->
+        </div><!--container end-->
+    </main>
+        
+    
+    <script src="script.js"></script>
+</body>
+</html>
