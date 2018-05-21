@@ -7,7 +7,6 @@
 body {
     background-image: url(img/background.png);
     background-size:cover;
-	
 }
 
 img {
@@ -16,20 +15,70 @@ img {
     opacity: 0.3;
 }
 
+@media  (min-width:1185px) {
+    section { 
+        width:40%;
+    }
+    header img {
+        width:700px;
+    }
+}
+
+@media  (min-width: 950px) and (max-width:1185px) {
+    section { 
+        width:467.5px;
+    }
+    header img {
+        width:700px;
+    }
+}
+
+@media  (min-width: 386px) and (max-width:950px) {
+    section { 
+        width:100%;
+    }
+    header img {
+        width:75%;
+    }
+    section img {
+        width:80% !important;
+    }
+}
+
+@media  (max-width:386px) {
+    section { 
+        width:100%;
+    }
+    div.input-line input{
+        width:100%;
+        font-size:16px;
+        padding:0 8px;
+    }
+    div.input-line select {
+        width:100%;
+        font-size:16px;
+        padding:0 8px;
+    }
+    header img {
+        width:75%;
+    }
+    section img {
+        width:80% !important;
+    }
+}
+
+section img {
+    width:60%;
+}
 
 /* Main */
 
 .container {
-    width:98%;
-    margin: 0 auto;
     display:flex;
     flex-flow: row wrap;
     justify-content: space-around;
 }
 
-.col {
-    width:519px;
-}
 
 .container h5 {
     font-size: 30px;
@@ -47,7 +96,7 @@ input, select, textarea {
 }
 .form {
     background: #f7f7f7;
-    width:91%;
+    width:88%;
     margin: 30px auto 50px auto;
     border-radius: 0.1rem;
     -webkit-box-shadow: 0px 0px 0px 24px rgba(0,0,0,0.26);
@@ -63,15 +112,16 @@ form {
 
 .input-line {
     display:flex;
+    padding-right:1px;
     height:39px;
     width:100%;
-    margin:20px auto;
+    margin:23px 0;
     border: 1px solid #cfcfcf;
     border-radius: 5px;
 }
 
 .input-line input{
-    flex-basis: 323px;
+    flex:1;
     height:75%;
     font-size:17px;
     background: #f7f7f7;
@@ -99,7 +149,7 @@ form {
 }
 
 .input-line select {
-    flex-basis: 365px;
+    flex:1;
     height:75%;
     border:none;
     background: #f4f4f4;
