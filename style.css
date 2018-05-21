@@ -65,6 +65,9 @@ img {
     section img {
         width:80% !important;
     }
+    form input[type="submit"] {
+        font-size:19px;
+    }
 }
 
 section img {
@@ -259,7 +262,6 @@ input[name="reject"]:hover {
 input[name="reject"]:focus {
     background: linear-gradient(rgb(253, 13, 33),rgb(221, 72, 89));
 }
-
 
 
 .input-text textarea {
